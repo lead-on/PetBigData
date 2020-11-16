@@ -1,0 +1,35 @@
+<div class="wrapper symptom">
+
+    <p class="title"><span>데이터 관리</span><i class="fal fa-chevron-right"></i><span>증상</span></p>
+
+    <div class="controller">
+        <div class="search-box">
+            <select>
+                <option selected>이름</option>
+            </select>
+            <input id="inputDataSearch" type="text" placeholder="검색어를 입력해주세요." />
+            <button id="buttonDataSearch" class="default">검색</button>
+        </div>
+        <hr />
+        <div class="control-buttons">
+            <button id="buttonSelectAll" class="default left">전체선택</button>
+            <button id="buttonSelectedRemove" class="default disabled">선택된 데이터 삭제</button>
+            <a href="/data/symptom/add"><button class="default">증상 데이터 추가</button></a>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th width="50">#</th>
+                <th width="150">썸네일</th>
+                <th>이름</th>
+                <th>키워드</th>
+                <th>생성일</th>
+            </tr>
+        </thead>
+        <tbody id="tBodyDataList" data_type="symptom">
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,81 @@
+
+<div class="wrapper symptom add">
+
+    <p class="title"><span>데이터 관리</span><i class="fal fa-chevron-right"></i><span>증상</span><i class="fal fa-chevron-right"></i><span>추가</span></p>
+
+    <div class="form-box">
+        <p class="form-title">썸네일 이미지</p>
+        <div class="thumb-wrapper">
+            <form method="post" enctype="multipart/form-data"><input name="image" type="file" accept="image/jpeg,image/png" /></form>
+            <div id="divThumb" class="thumb"></div>
+            <button id="buttonUploadThumb" class="default">이미지 업로드</button>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <p class="form-title">이름</p>
+        <input id="inputName" class="default" type="text" />
+    </div>
+
+    <div class="form-box">
+        <p class="form-title">키워드</p>
+        <div class="keyword-wrapper">
+            <div id="divKeywordInput" class="keyword-input">
+                <input id="inputKeyword" class="default" type="text" />
+                <button id="buttonAddKeyword" class="default"><i class="fal fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <p class="form-title">설명</p>
+        <textarea id="textareaDesc1" class="default"></textarea>
+    </div>
+
+    <div class="form-box">
+        <p class="form-title">주의사항</p>
+        <textarea id="textareaDesc2" class="default"></textarea>
+    </div>
+
+    <div class="form-box">
+        <p class="form-title">이미지</p>
+        <div class="image-wrapper">
+            <form id="formTestImage" method="post" enctype="multipart/form-data"><input name="image" type="file" accept="image/jpeg,image/png" /></form>
+            <button id="buttonAddImage" class="default"><i class="fal fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="form-box" data_type="disease">
+        <p class="form-title">연관 질병</p>
+        <div class="relationship-wrapper">
+            <button class="default" data_type="disease"><i class="fal fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="form-box" data_type="product">
+        <p class="form-title">연관 제품</p>
+        <div class="relationship-wrapper">
+            <button class="default" data_type="product"><i class="fal fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="form-box" data_type="food">
+        <p class="form-title">연관 음식</p>
+        <div class="relationship-wrapper">
+            <button class="default" data_type="food"><i class="fal fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="form-box" data_type="tag">
+        <p class="form-title">기타 태그</p>
+        <div class="relationship-wrapper">
+            <button class="default" data_type="tag"><i class="fal fa-plus"></i></button>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="default cancel" onclick="history.back();">취소</button>
+        <button id="buttonSaveData" data_type="symptom" class="default">저장</button>
+    </div>
+
+</div>

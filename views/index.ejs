@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<meta http-equiv="cleartype" content="on" />
+    <meta name="description" content="two-drone" />
+	<meta name="keywords"  content="" />
+	<meta name="theme-color" content="#fff">
+
+    <title>반려동물 빅데이터 관리자</title>
+
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+
+    <% if (menu == 'main') { %>
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <% } else if (menu == 'data_disease' || menu == 'data_product' || menu == 'data_symptom' || menu == 'data_tag' || menu == 'data_food' || menu == 'data_disease_add' || menu == 'data_food_add' || menu == 'data_symptom_add' || menu == 'data_product_add') { %>
+        <link rel="stylesheet" type="text/css" href="/css/data.css" />
+    <% } %>
+</head>
+<body>
+    <input id="inputHiddenMenu" type="hidden" value="<%=menu%>" />
+
+    <header>
+        <div class="title-wrapper">
+            <a href="/"><p class="title">반려동물 빅데이터 관리자</p></a>
+        </div>
+    </header>
+
+    <nav class="side-menu">
+        <div class="main-menu">홈</div>
+
+        <div class="main-menu">데이터 관리</div>
+        <ul>
+            <a href="/data/disease"><li <% if (menu == 'data_disease' || menu == 'data_disease_add') { %> class="selected" <% } %>>질병</li></a>
+            <a href="/data/food"><li <% if (menu == 'data_food' || menu == 'data_food_add') { %> class="selected" <% } %>>음식</li></a>
+            <a href="/data/symptom"><li <% if (menu == 'data_symptom' || menu == 'data_symptom_add') { %> class="selected" <% } %>>증상</li></a>
+            <a href="/data/product"><li <% if (menu == 'data_product' || menu == 'data_product_add') { %> class="selected" <% } %>>제품</li></a>
+            <a href="/data/tag"><li <% if (menu == 'data_tag' || menu == 'data_tag_add') { %> class="selected" <% } %>>기타 태그</li></a>
+        </ul>
+
+        <div class="main-menu">사용자 관리</div>
+
+        <div class="main-menu">컬럼</div>
+    </nav>
+
+    <article>
+        <% if (menu == 'main') { %>
+            <% include ./main %>
+
+        <% } else if (menu == 'data_disease') { %>
+            <% include ./data/disease %>
+        <% } else if (menu == 'data_disease_add') { %>
+            <% include ./data/disease_add %>
+
+        <% } else if (menu == 'data_food') { %>
+            <% include ./data/food %>
+        <% } else if (menu == 'data_food_add') { %>
+            <% include ./data/food_add %>
+
+        <% } else if (menu == 'data_symptom') { %>
+            <% include ./data/symptom %>
+        <% } else if (menu == 'data_symptom_add') { %>
+            <% include ./data/symptom_add %>
+
+        <% } else if (menu == 'data_product') { %>
+            <% include ./data/product %>
+        <% } else if (menu == 'data_product_add') { %>
+            <% include ./data/product_add %>
+
+        <% } else if (menu == 'data_tag') { %>
+            <% include ./data/tag %>
+        <% } %>
+
+        <nav class="data-bottom-menu">
+            <div class="wrapper">
+                <button class="default">자세히</button>
+                <button class="default">삭제</button>
+                <button class="default">수정</button>
+                <button class="default">연관 데이터 보기</button>
+            </div>
+        </nav>
+    </article>
+
+    <footer>
+        <div class="wrapper">FOOTER</div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="/js/common.js"></script>
+
+    <% if (menu == 'main') { %>
+        <script src="/js/main.js"></script>
+
+    <% } else if (menu == 'data_disease' || menu == 'data_product' || menu == 'data_symptom' || menu == 'data_tag' || menu == 'data_food' || menu == 'data_disease_add' || menu == 'data_food_add' || menu == 'data_symptom_add' || menu == 'data_product_add') { %>
+        <script src="/js/data.js"></script>
+    <% } %>
+</body>
+</html>

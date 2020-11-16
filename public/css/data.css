@@ -1,0 +1,476 @@
+.wrapper {
+    padding: 48px 0;
+}
+
+.wrapper .title {
+    font-size: 0;
+    margin: 0;
+}
+.wrapper .title span {
+    font-size: 2.5rem;
+}
+.wrapper .title i {
+    font-size: 2rem;
+    margin: 0 20px;
+}
+.wrapper .controller {
+    margin-top: 48px;
+    background: #EFEFEF;
+    padding: 28px;
+}
+.wrapper .controller hr {
+    border: 1px solid #DFDFDF;
+    border-top: none;
+    margin: 28px 0;
+}
+.wrapper .controller .search-box {
+    text-align: center;
+}
+.wrapper .controller .search-box select {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0 30px 0 8px;
+	background: url(/img/chevron-down-regular.svg) no-repeat calc(100% - 8px) 50%;
+	background-size: 14px auto;
+	background-color: #FFFFFF;
+}
+.wrapper .controller .search-box input {
+    width: 300px;
+    height: 40px;
+    margin: 0 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+.wrapper .controller .control-buttons {
+    text-align: right;
+    position: relative;
+}
+.wrapper .controller .control-buttons button#buttonSelectedRemove {
+    margin-right: 12px;
+}
+.wrapper .controller .control-buttons button.left {
+    position: absolute;
+    left: 0;
+	bottom: 50%;
+    -webkit-transform: translateY(50%);
+	-moz-transform: translateY(50%);
+	-ms-transform: translateY(50%);
+	-o-transform: translateY(50%);
+	transform: translateY(50%);
+}
+
+.wrapper table {
+    margin-top: 48px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.wrapper table thead tr th {
+    padding: 12px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: #666666;
+    color: #FFFFFF;
+}
+.wrapper table thead tr th:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.wrapper table thead tr th:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.wrapper table tbody tr {
+    border-bottom: 1px solid #DFDFDF;
+    cursor: pointer;
+}
+.wrapper table tbody tr:hover {
+    background: #EFEFEF;
+}
+.wrapper table tbody tr.selected {
+    background: #fff5ee;
+}
+.wrapper table tbody tr td {
+    text-align: center;
+    padding: 6px 0;
+}
+.wrapper table tbody tr td .thumb {
+    width: 80px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: middle;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wrapper.add .form-box {
+    margin-top: 48px;
+}
+.wrapper.add .form-box .form-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.wrapper.add .form-box > input {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 12px;
+    padding: 8px 16px;
+}
+.wrapper.add .form-box > textarea {
+    margin-top: 12px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 16px;
+    font-size: 1rem;
+}
+.wrapper.add .form-box .thumb-wrapper {
+    margin-top: 12px;
+    text-align: center;
+}
+.wrapper.add .form-box .thumb-wrapper form input {
+    display: none;
+}
+.wrapper.add .form-box .thumb-wrapper .thumb {
+    margin: 0 auto;
+    border: 2px solid #CCCCCC;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper.add .form-box .thumb-wrapper button {
+    width: 200px;
+    margin-top: 12px;
+}
+.wrapper.add .form-box .keyword-wrapper,
+.wrapper.add .form-box .relationship-wrapper,
+.wrapper.add .form-box .image-wrapper {
+    font-size: 0;
+}
+
+.wrapper.add .form-box .keyword-wrapper > p,
+.wrapper.add .form-box .relationship-wrapper > p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    margin: 12px 8px 0 0;
+    background: #EFEFEF;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px solid #EFEFEF;
+    border-radius: 4px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.wrapper.add .form-box .keyword-wrapper > p:hover,
+.wrapper.add .form-box .relationship-wrapper > p:hover {
+    background: #DFDFDF;
+    border: 2px solid #DFDFDF;
+}
+.wrapper.add .form-box .keyword-wrapper .keyword-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+.wrapper.add .form-box .keyword-wrapper .keyword-input input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 12px 6px 0 0;
+}
+.wrapper.add .form-box .keyword-wrapper .keyword-input button,
+.wrapper.add .form-box .relationship-wrapper button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 44px;
+    width: 44px;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 12px;
+}
+.wrapper.add .form-box .image-wrapper > form input {
+    display: none;
+}
+.wrapper.add .form-box .image-wrapper .image-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    margin: 12px 6px 0 0;
+}
+.wrapper.add .form-box .image-wrapper .image-box form input {
+    display: none;
+}
+.wrapper.add .form-box .image-wrapper .image-box .image {
+    margin-top: 6px;
+    height: 120px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #AAAAAA;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper.add .form-box .image-wrapper .image-box .image:hover {
+    opacity: 0.8;
+}
+.wrapper.add .form-box .image-wrapper .image-box select {
+    /* margin-top: 6px; */
+    padding: 2px 4px;
+    width: 100%;
+    font-size: 0.8rem;
+}
+.wrapper.add .form-box .image-wrapper button {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 120px;
+    height: 120px;
+    padding: 0;
+    font-size: 2rem;
+    margin-top: 12px;
+}
+
+.wrapper.add .buttons {
+    margin-top: 48px;
+    text-align: center;
+}
+.wrapper.add .buttons button {
+    height: auto;
+    font-size: 1.3rem;
+    padding: 12px 32px;
+}
+.wrapper.add .buttons button:first-child {
+    margin-right: 32px;
+}
+.wrapper.add .buttons button.cancel {
+    background: #AAAAAA;
+}
+.wrapper.add .buttons button.cancel:hover {
+    background: #BBBBBB;
+}
+
+
+.dialog-data-search {
+    z-index: 1000;
+    width: 640px;
+    max-width: 90%;
+    max-height: 90%;
+    background: #FFFFFF;
+	position: fixed;
+	right: 50%;
+	bottom: 50%;
+    -webkit-transform: translate(50%, 50%);
+	-moz-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	-o-transform: translate(50%, 50%);
+	transform: translate(50%, 50%);
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0,0,0,.12);
+    border-radius: 4px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.dialog-data-search .dialog-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 28px 0;
+    margin: 0;
+}
+.dialog-data-search .dialog-title span {
+    font-weight: 700;
+}
+.dialog-data-search .controller {
+    background: #EFEFEF;
+    padding: 28px;
+}
+.dialog-data-search .controller .search-box {
+    text-align: center;
+}
+.dialog-data-search .controller .search-box select {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+.dialog-data-search .controller .search-box input {
+    width: 300px;
+    height: 40px;
+    margin: 0 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    padding: 0 8px;
+}
+.dialog-data-search .dialog-body {
+    padding: 16px;
+}
+.dialog-data-search .dialog-body table {
+    padding: 16px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.dialog-data-search .dialog-body table thead tr th {
+    padding: 8px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    background: #666666;
+    color: #FFFFFF;
+}
+.dialog-data-search .dialog-body table thead tr th:first-child {
+    border-radius: 4px 0 0 4px;
+}
+.dialog-data-search .dialog-body table thead tr th:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.dialog-data-search .dialog-body table tbody tr {
+    border-bottom: 1px solid #DFDFDF;
+    cursor: pointer;
+}
+.dialog-data-search .dialog-body table tbody tr:hover {
+    background: #EFEFEF;
+}
+.dialog-data-search .dialog-body table tbody tr.selected {
+    background: #fff5ee;
+}
+.dialog-data-search .dialog-body table tbody tr td {
+    text-align: center;
+    padding: 4px 0;
+    font-size: 0.8rem;
+}
+.dialog-data-search .dialog-body table tbody tr td .thumb {
+    width: 60px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.dialog-add-tag {
+    z-index: 1000;
+    width: 480px;
+    max-width: 90%;
+    max-height: 90%;
+    background: #FFFFFF;
+	position: fixed;
+	right: 50%;
+	bottom: 50%;
+    -webkit-transform: translate(50%, 50%);
+	-moz-transform: translate(50%, 50%);
+	-ms-transform: translate(50%, 50%);
+	-o-transform: translate(50%, 50%);
+	transform: translate(50%, 50%);
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0,0,0,.12);
+    border-radius: 4px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.dialog-add-tag .dialog-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 28px 0;
+    margin: 0;
+}
+.dialog-add-tag .dialog-body {
+    padding: 0 16px;
+}
+.dialog-add-tag .dialog-body .form-box:last-child {
+    margin-top: 48px;
+}
+.dialog-add-tag .dialog-body .form-box .form-title {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.dialog-add-tag .dialog-body .form-box > input {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 12px;
+    padding: 8px 16px;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper {
+    font-size: 0;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper > p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    margin: 12px 8px 0 0;
+    background: #EFEFEF;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 2px solid #EFEFEF;
+    border-radius: 4px;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper > p:hover {
+    background: #DFDFDF;
+    border: 2px solid #DFDFDF;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper .keyword-input {
+    display: inline-block;
+    vertical-align: middle;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper .keyword-input input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin: 12px 6px 0 0;
+}
+.dialog-add-tag .dialog-body .form-box .keyword-wrapper .keyword-input button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 44px;
+    width: 44px;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-top: 12px;
+}
+.dialog-add-tag .dialog-footer {
+    margin-top: 48px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.dialog-add-tag .dialog-footer button {
+    height: auto;
+    font-size: 1.3rem;
+    padding: 12px 32px;
+}
+.dialog-add-tag .dialog-footer button:first-child {
+    margin-right: 32px;
+}
+.dialog-add-tag .dialog-footer button.cancel {
+    background: #AAAAAA;
+}
+.dialog-add-tag .dialog-footer button.cancel:hover {
+    background: #BBBBBB;
+}

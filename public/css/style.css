@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.upload_btn {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #CCCCCC;
+    border-radius: 10%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.upload_btn label {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #333333;
+    
+}
