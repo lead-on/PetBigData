@@ -1,0 +1,5 @@
+.DS_Strore
+public/fontawesome
+bin
+node_modules
+.env
