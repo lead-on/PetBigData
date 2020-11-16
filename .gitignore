@@ -1,0 +1,5 @@
+public/fontawesome
+bin
+.env
+.DS_Store
+node_modules
